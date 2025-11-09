@@ -8,7 +8,12 @@
 <body>
     <h1>Titulo</h1>
     <?php
+    $nome = $_POST('nome');
+    $senha = $_POST('senha');
     echo"<p>Texto teste para testar o teste</p>";
+    if($nome == 'flash' && $senha == 123 ){
+       echo"<p>Bem vindo Flash!</p>"; 
+    }
     ?>
 </body>
 </html>
