@@ -6,13 +6,24 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Titulo</h1>
+
+    <h1>Redirecionamento</h1>
+
     <?php
-    $nome = $_POST('nome');
-    $senha = $_POST('senha');
-    echo"<p>Texto teste para testar o teste</p>";
-    if($nome == 'flash' && $senha == 123 ){
-       echo"<p>Bem vindo Flash!</p>"; 
+    $nome = $_POST['login'];
+    $senha = $_POST['senha'];
+
+    if($nome == 'flash' && $senha == 123 ){ 
+        echo"<p><a href='perfis/flash.html'>Clique aqui!</a></p>"; 
+    } 
+    else if($nome == 'batman' && $senha == 'batbat' ){
+        echo"<p><a href='perfis/batman.html'>Clique aqui!</a></p>"; 
+    } 
+    else if($nome == 'superman' && $senha == 'super' ){
+        echo"<p><a href='perfis/superman.html'>Clique aqui!</a></p>"; 
+    } 
+    else{
+        echo"<p>Login ou Senha incorreto</p>";
     }
     ?>
 </body>
