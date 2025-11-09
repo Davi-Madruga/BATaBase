@@ -1,0 +1,33 @@
+body
+{
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.BackGround {
+  background-image: url('/img/BackGround.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.Titulo
+{
+    
+}
+
+.Formulario
+{
+    margin-top: 200px;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    height: 180px;
+}
+
+input, label
+{
+    margin: 10px;
+}
