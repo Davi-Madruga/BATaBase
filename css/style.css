@@ -5,17 +5,6 @@ body
     justify-items: center;
 }
 
-.BackGround {
-  background-image: url('/img/BackGround.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-.Titulo
-{
-    
-}
-
 .Formulario
 {
     margin-top: 200px;
@@ -30,4 +19,8 @@ body
 input, label
 {
     margin: 10px;
+}
+
+.titulo{
+    font-weight: bolder;
 }
