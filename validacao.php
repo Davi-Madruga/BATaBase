@@ -6,21 +6,21 @@
     <title>Home</title>
 </head>
 <body>
-
-    <h1>Redirecionamento</h1>
-
     <?php
     $nome = $_POST['login'];
     $senha = $_POST['senha'];
 
     if($nome == 'flash' && $senha == 123 ){ 
-        echo"<p><a href='perfis/flash.html'>Clique aqui!</a></p>"; 
+        header("Location: perfis/flash.html");
+        exit;
     } 
     else if($nome == 'batman' && $senha == 'batbat' ){
-        echo"<p><a href='perfis/batman.html'>Clique aqui!</a></p>"; 
+        header("Location: perfis/batman.html");
+        exit;
     } 
     else if($nome == 'superman' && $senha == 'super' ){
-        echo"<p><a href='perfis/superman.html'>Clique aqui!</a></p>"; 
+        header("Location: perfis/superman.html");
+        exit;
     } 
     else{
         echo"<p>Login ou Senha incorreto</p>";
