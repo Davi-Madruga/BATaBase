@@ -1,9 +1,13 @@
 .janela_conversa{
     border: 3px solid black;
-    width: 300px;
+    width: 250px;
     padding: 10px;
     text-align: left;
     background-color: rgb(38, 228, 38);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
 }
 .janela_conversa p{
     display: block;
@@ -11,9 +15,11 @@
     padding: 6px 10px;
     margin: 4px 0;
     border-radius: 8px;
-    margin-left: auto; /* joga o balão para direita */
-    max-width: 230px;
+    margin-right: auto;
+    max-width: 160px;
     border: 1px solid black;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
 }
 .flashmensagem{
     background: #ff7c02;
@@ -27,5 +33,9 @@
 }
 input{
     margin-top: 10px;
-    width: 260px;
+    width: 85%;
+}
+.mensagens{
+    max-height: 300px;
+    overflow-y: auto; 
 }
