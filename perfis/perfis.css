@@ -1,0 +1,31 @@
+.janela_conversa{
+    border: 3px solid black;
+    width: 300px;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(38, 228, 38);
+}
+.janela_conversa p{
+    display: block;
+    width: fit-content;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 8px;
+    margin-left: auto; /* joga o balão para direita */
+    max-width: 230px;
+    border: 1px solid black;
+}
+.flashmensagem{
+    background: #ff7c02;
+}
+.batmensagem{
+    background: #000000;
+    color: white;
+}
+.supermensagem{
+    background: #748cf7;
+}
+input{
+    margin-top: 10px;
+    width: 260px;
+}

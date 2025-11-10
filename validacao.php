@@ -11,7 +11,7 @@
     $senha = $_POST['senha'];
 
     if($nome == 'flash' && $senha == 123 ){ 
-        header("Location: perfis/flash.html");
+        header("Location: perfis/flash.php");
         exit;
     } 
     else if($nome == 'batman' && $senha == 'batbat' ){
@@ -19,7 +19,7 @@
         exit;
     } 
     else if($nome == 'superman' && $senha == 'super' ){
-        header("Location: perfis/superman.html");
+        header("Location: perfis/superman.php");
         exit;
     } 
     else{
