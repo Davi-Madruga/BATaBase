@@ -15,7 +15,7 @@
         exit;
     } 
     else if($nome == 'batman' && $senha == 'batbat' ){
-        header("Location: perfis/batman.html");
+        header("Location: perfis/batman.php");
         exit;
     } 
     else if($nome == 'superman' && $senha == 'super' ){

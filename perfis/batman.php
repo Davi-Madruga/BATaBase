@@ -3,24 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superman</title>
+    <title>Batman</title>
     <link rel="stylesheet" href="perfis.css">
     <style>
-        .janela_conversa .supermensagem{
-    display: block;
-    width: fit-content;
-    padding: 6px 10px;
-    margin: 4px 0;
-    border-radius: 8px;
-    margin-left: auto;
-    max-width: 160px;
-    border: 1px solid black;
-    word-wrap: break-word; 
-    overflow-wrap: break-word; 
+    .janela_conversa .batmensagem{
+        display: block;
+        width: fit-content;
+        padding: 6px 10px;
+        margin: 4px 0;
+        border-radius: 8px;
+        margin-left: auto;
+        max-width: 160px;
+        border: 1px solid black;
+        word-wrap: break-word; 
+        overflow-wrap: break-word; 
+    }       
+    body{
+        background-image: url('../img/batpc.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        min-height: 100vh;
+        margin: 0;
+    }
+.tela {
+    position: absolute;
+    width: 318px;
+    height: 258px;
+
+    aspect-ratio: 1.4; /* mantém proporção aproximada da tela */
+    cursor: pointer;
+    border: 4px solid rgba(255,255,255,0); /* invisível, mas ajuda a ver */
+    transition: 0.2s;
+    top: 14%;
+    left: 38%;
 }
+
+.tela2:hover {
+    border-color: #00d9ff;
+    border: 3px 3px 3px 3px;
+    border-style: solid;
+
+}
+
+
     </style>
 </head>
 <body>
+    <a href="tela2.html">
+    <div class="tela"></div>
+</a>
     <a href="../formulario.html"><button>Deslogar</button></a>
     <?php
         session_start();
@@ -35,7 +68,7 @@
                 'autor' => $_POST['autor'],
                 'texto' => $_POST['item']
             ];
-            header("Location: superman.php"); 
+            header("Location: batman.php"); 
             exit;
         }
     ?>
@@ -53,7 +86,7 @@
             ?>
         </div>
         <form method="post">
-            <input type="hidden" name="autor" value="Superman">
+            <input type="hidden" name="autor" value="Batman">
             <input name="item"  type="text">
             <button type="submit">^</button>
         </form>

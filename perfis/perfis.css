@@ -9,6 +9,12 @@
     right: 10px;
     
 }
+.background{
+    border-color: #00d9ff;
+    border: 3px 2px 4px 5px;
+    border-style: solid;
+}
+
 .janela_conversa p{
     display: block;
     width: fit-content;
