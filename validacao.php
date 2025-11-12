@@ -9,22 +9,22 @@
     <?php
     $nome = $_POST['login'];
     $senha = $_POST['senha'];
+    
+    $logins = [
+        ['login' => "flash",'senha' => "123"], 
+        ['login' => "batman",'senha' => "123"],
+        ['login' => "superman",'senha' => "123"]
+    ];
 
-    if($nome == 'flash' && $senha == 123 ){ 
-        header("Location: perfis/flash.php");
-        exit;
-    } 
-    else if($nome == 'batman' && $senha == 'batbat' ){
-        header("Location: perfis/batman.php");
-        exit;
-    } 
-    else if($nome == 'superman' && $senha == 'super' ){
-        header("Location: perfis/superman.php");
-        exit;
-    } 
-    else{
-        echo"<p>Login ou Senha incorreto</p>";
+    foreach($logins as $login){
+        if($login['login']==$nome && $login['senha']==$senha){
+            header("Location: perfis/{$login['login']}.php");
+            exit;
+        }
     }
+    
+    header("Location: formulario.html");
+    exit;
     ?>
 </body>
 </html>
