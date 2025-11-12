@@ -54,7 +54,9 @@
     <a href="tela2.html">
     <div class="tela"></div>
 </a>
-    <a href="../formulario.php"><button>Deslogar</button></a>
+    <form action="logout.php" method="post">
+        <button type="submit">Deslogar</button>
+    </form>
     <?php
         session_start();
         if(isset($_POST['resetar'])){
