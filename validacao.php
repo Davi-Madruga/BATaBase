@@ -22,8 +22,7 @@
             exit;
         }
     }
-    
-    header("Location: formulario.html");
+    header("Location: formulario.php?erro=1");
     exit;
     ?>
 </body>

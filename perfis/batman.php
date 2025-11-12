@@ -40,7 +40,7 @@
     left: 38%;
 }
 
-.tela2:hover {
+.tela:hover {
     border-color: #00d9ff;
     border: 3px 3px 3px 3px;
     border-style: solid;
@@ -54,7 +54,7 @@
     <a href="tela2.html">
     <div class="tela"></div>
 </a>
-    <a href="../formulario.html"><button>Deslogar</button></a>
+    <a href="../formulario.php"><button>Deslogar</button></a>
     <?php
         session_start();
         if(isset($_POST['resetar'])){

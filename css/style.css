@@ -3,7 +3,7 @@ body
     justify-content: center;
     text-align: center;
     justify-items: center;
-    background-color: black;
+    background-color: rgb(124, 122, 122);
 }
 
 .Formulario
@@ -20,7 +20,7 @@ body
 input, label
 {
     margin: 10px;
-    color: rgb(150, 150, 150);
+    color: rgb(0, 0, 0);
 }
 
 .titulo{

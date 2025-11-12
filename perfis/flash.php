@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-    <a href="../formulario.html"><button>Deslogar</button></a>
+    <a href="../formulario.php"><button>Deslogar</button></a>
     <?php
         session_start();
         if(isset($_POST['resetar'])){

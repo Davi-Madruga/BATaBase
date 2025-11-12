@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/StyleForms.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1 class="titulo">Central dos Herois</h1>
@@ -12,7 +12,11 @@
         <form action="validacao.php" method="post">
             <label for="login">Login:</label><br>
             <input type="text" name="login" id="login"><br>
-
+            <?php
+            if (isset($_GET['erro'])) {
+                echo "<p style='color:red;'>Usuário ou senha incorretos.</p>";
+            }
+            ?>
             <label for="senha">Senha:</label><br>
             <input type="password" name="senha" id="senha"><br><br>
 
