@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-    <form action="logout.php" method="post">
+    <form action="../logout.php" method="post">
         <button type="submit">Deslogar</button>
     </form>
     <?php
