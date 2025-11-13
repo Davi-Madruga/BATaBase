@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 class="titulo">Central de Jeofton</h1>
+    <h1 class="titulo">Central da Liga</h1>
     <div class="Formulario">
         <form action="validacao.php" method="post">
             <label for="login">Login:</label><br>
