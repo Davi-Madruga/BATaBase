@@ -51,6 +51,9 @@
     </style>
 </head>
 <body>
+    <a href="tela.html">
+    <div class="tela"></div>
+    </a>
     <form action="../logout.php" method="post">
         <button type="submit">Deslogar</button>
     </form>
