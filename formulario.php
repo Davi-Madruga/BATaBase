@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 class="titulo">Central dos Herois</h1>
+    <h1 class="titulo">Central de Jeofton</h1>
     <div class="Formulario">
         <form action="validacao.php" method="post">
             <label for="login">Login:</label><br>
             <input type="text" name="login" id="login"><br>
-            <?php
-            if (isset($_GET['erro'])) {
-                echo "<p style='color:red;'>Usuário ou senha incorretos.</p>";
-            }
-            ?>
             <label for="senha">Senha:</label><br>
             <input type="password" name="senha" id="senha"><br><br>
 
             <button type="submit">Enviar</button>
+            <?php
+            if (isset($_GET['erro'])) {
+                echo "<p class='aviso'>Usuário ou senha incorretos.</p>";
+            }
+            ?>
         </form> 
     </div>
 </body>

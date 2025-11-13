@@ -29,8 +29,8 @@
     }
 .tela {
     position: absolute;
-    width: 318px;
-    height: 258px;
+    width: 23%;
+    height: 40%;
 
     aspect-ratio: 1.4; /* mantém proporção aproximada da tela */
     cursor: pointer;
