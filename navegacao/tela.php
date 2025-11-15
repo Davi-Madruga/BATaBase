@@ -8,13 +8,36 @@
     <script src="../js/script.js" defer></script>
 </head>
 <body>
-    <button id="abrir">abrir</button>
-
-    
-    <div id="popup" class="escondido">
+    <!--ITENS-->
+    <button id="itens">Itens</button>
+    <div id="popup_itens" class="escondido">
         <div class="caixa">
-            <button id="fechar">X</button>
+            <button id="fechar_itens">X</button>
         </div>
     </div>
+
+    <!--VILOES-->
+    <button id="viloes">Viloes</button>
+    <div id="popup_viloes" class="escondido">
+        <div class="caixa">
+            <button id="fechar_viloes">X</button>
+        </div>
+    </div>
+
+    <!--VEICULOS-->
+    <button id="veiculos">Veiculos</button>
+    <div id="popup_veiculos" class="escondido">
+        <div class="caixa">
+            <button id="fechar_veiculos">X</button>
+        </div>
+    </div>    
+
+    <!--TRAJES-->
+    <button id="trajes">trajes</button>
+    <div id="popup_trajes" class="escondido">
+        <div class="caixa">
+            <button id="fechar_trajes">X</button>
+        </div>
+    </div>    
 </body>
 </html>

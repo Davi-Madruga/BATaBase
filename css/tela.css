@@ -9,7 +9,7 @@ body{
     color: white;
 }
 
-#popup{
+#popup_itens,#popup_viloes,#popup_veiculos,#popup_trajes{
     position: fixed;
     top: 0;
     right: 0;
