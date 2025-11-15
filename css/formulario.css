@@ -1,5 +1,9 @@
 body{
-  background-color: rgb(26, 26, 26);
+  background-image: url('../img/telapc.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
   color: #f1f1f1;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -15,7 +19,7 @@ body{
   width: 380px;
   height: 220px;
   padding: 25px 30px;
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(29, 29, 29);
   border: 1px solid white;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(92, 92, 92, 0.6);

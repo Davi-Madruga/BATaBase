@@ -8,13 +8,8 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="tela" id="abrir"></div>
-    
-    <div id="popup" class="escondido">
-        <div class="caixa">
-            <button id="fechar">X</button>
-        </div>
-    </div>
-    <a href="formulario.php"><div class="logout"></div></a>
+    <a href="navegacao/login.php">
+        <div class="tela" id="abrir"></div>
+    </a>
 </body>
 </html>

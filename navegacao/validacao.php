@@ -4,10 +4,10 @@ $nome = $_POST['login'];
 $senha = $_POST['senha'];
 
 if($nome == "batman" && $senha == "123"){
-    header("Location: batman.php");
+    header("Location: tela.php");
     exit;
 }
 
-header("Location: formulario.php?erro=1");
+header("Location: login.php?erro=1");
 exit;
 ?>
