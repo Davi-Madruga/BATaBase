@@ -44,3 +44,16 @@ body{
     opacity: 0;
     display: none;
 }
+
+.BtoFechar
+{
+    font-size: large;
+    position: absolute;
+    border: solid 3px black;
+    background-color: crimson;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    top: 12%;
+    right: 16%;
+}
