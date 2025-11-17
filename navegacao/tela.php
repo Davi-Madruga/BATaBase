@@ -8,6 +8,7 @@
     <script src="../js/script.js" defer></script>
 </head>
 <body>
+    <a href="../index.php"><button class="BtoFechar">X</button></a>
     <a href="itens.php"><button id="itens">Itens</button></a>
     <button id="viloes">Viloes</button>
     <button id="veiculos">Veiculos</button>

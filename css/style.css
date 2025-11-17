@@ -1,9 +1,10 @@
 body{
+    /*
     height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     background-image: url('../img/batpc.png');
     background-size: cover;
     background-position: center center;

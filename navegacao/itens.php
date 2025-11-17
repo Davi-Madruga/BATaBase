@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/tela.css">
 </head>
 <body>
-<h1>ITENS</h1>
+<h1>ITENS | <a href="tela.php"><button>Menu</button></a></h1> 
 <a href="cadastrar_item.php"><button>Criar</button></a>
 <!--READ-->
 <?php

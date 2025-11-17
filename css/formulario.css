@@ -13,7 +13,18 @@ body{
   align-items: center;    
   min-height: 100vh;     
 }
-
+.BtoFechar
+{
+    font-size: large;
+    position: absolute;
+    border: solid 3px black;
+    background-color: crimson;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    top: 2%;
+    right: 1%;
+}
 .Formulario
 {
   width: 380px;
