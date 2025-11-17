@@ -27,7 +27,7 @@
         die('Erro: Preencha todos os campos');
     };
 
-    $create = "INSERT INTO itens_tbl(id, nome, descricao) VALUES('$item_name','$item_descricao')";
+    $create = "INSERT INTO itens_tbl(nome, descricao) VALUES('$item_name','$item_descricao')";
 
     if(!$conexao->query($create)){
         die('Erro: '. $conexao->erro);
