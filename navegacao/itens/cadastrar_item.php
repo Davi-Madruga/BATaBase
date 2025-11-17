@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
         die('Erro: Preencha todos os campos');
     };
 
-    $create = "INSERT INTO itens_tbl(id, nome, descricao) VALUES('','$item_name','$item_descricao')";
+    $create = "INSERT INTO itens_tbl(id, nome, descricao) VALUES('$item_name','$item_descricao')";
 
     if(!$conexao->query($create)){
         die('Erro: '. $conexao->erro);
