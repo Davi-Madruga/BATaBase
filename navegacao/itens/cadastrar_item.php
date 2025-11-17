@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADASTRAR ITEM</title>
-    <link rel="stylesheet" href="../css/tela.css">
+    <link rel="stylesheet" href="../../css/tela.css">
 </head>
 <body>
 <h1>CADASTRANDO...</h1>
@@ -16,7 +16,7 @@
     <button type="submit">Salvar</button> | <a href="itens.php"><button type="button">Voltar</button></a><br><br>
 </form>
 <?php
-    include '../infra/db.php';
+    include '../../infra/db.php';
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
 

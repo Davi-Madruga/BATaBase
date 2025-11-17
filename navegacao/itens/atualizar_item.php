@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATUALIZAR ITEM</title>
-    <link rel="stylesheet" href="../css/tela.css">
+    <link rel="stylesheet" href="../../css/tela.css">
 </head>
 <body>
 <h1>ATUALIZANDO...</h1>
 <?php
-    include '../infra/db.php';
+    include '../../infra/db.php';
     $id = $_GET['id'] ?? null;
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $id_post = $_POST['id'];

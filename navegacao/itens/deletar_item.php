@@ -1,5 +1,5 @@
 <?php
-    include '../infra/db.php';
+    include '../../infra/db.php';
     $id = $_GET['id'] ?? null;
 
     if($id){        
