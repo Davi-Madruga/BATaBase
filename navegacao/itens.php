@@ -29,7 +29,10 @@
                     echo "<tr>";
                     echo "<td>".$linha['nome']."</td>";
                     echo "<td>".$linha['descricao']."</td>";
-                    echo "<td><a href='atualizar_item.php?id=".$linha['id']."'><button>Editar</button></a> | <a type='button' id='excluir' href='delete.php?id=".$linha['id']."'>Excluir</a> </td>";
+                    echo "<td>
+                    <a href='atualizar_item.php?id=".$linha['id']."'><button>Atualizar</button></a> |  
+                    <a href='deletar_item.php?id=".$linha['id']."' onclick=\"return confirm('Tem certeza que deseja deletar ".$linha['nome']."?');\"><button>Excluir</button></a>
+                    </td>"; 
                     echo"</tr>";    
                 }
                 echo "</tbody>
