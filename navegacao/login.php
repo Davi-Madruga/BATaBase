@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/formulario.css">
 </head>
 <body>
-    <h1 class="titulo">Central da Liga</h1>
+    <h1 class="titulo">Bem-Vindo Batman</h1>
     <div class="Formulario">
         <form action="validacao.php" method="post">
             <label for="login">Login:</label><br>
