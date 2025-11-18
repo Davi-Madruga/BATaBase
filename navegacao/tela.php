@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BATaBase</title>
     <link rel="stylesheet" href="../css/tela.css">
-    <script src="../js/script.js" defer></script>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <a href="../index.php"><button class="BtoFechar">X</button></a>

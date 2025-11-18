@@ -13,6 +13,7 @@ body{
   align-items: center;    
   min-height: 100vh;     
 }
+
 .BtoFechar
 {
     font-size: large;
@@ -24,7 +25,9 @@ body{
     height: 35px;
     top: 2%;
     right: 1%;
+    cursor: pointer;
 }
+
 .Formulario
 {
   width: 380px;
@@ -37,7 +40,7 @@ body{
   text-align: center;
 }
 
-button {
+.enviar {
   margin-top: 10px;
   padding: 10px 15px;
   border: none;
@@ -47,7 +50,7 @@ button {
   transition: 0.5s;
 }
 
-button:hover {
+.enviar:hover {
   background-color: rgb(163, 163, 23);
   color: white;
 }
@@ -69,13 +72,6 @@ input
     top: 50px;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-header{
-    border: 3px solid black;
-    width: 100%;
-    height: 50px;
-    margin: 20px;
 }
 
 .aviso

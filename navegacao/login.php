@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <a href="../index.php"><button class="BtoFechar">X</button></a>
     <h1 class="titulo">Bem-Vindo Batman</h1>
     <div class="Formulario">
         <form action="validacao.php" method="post">
@@ -15,7 +17,7 @@
             <label for="senha">Senha:</label><br>
             <input type="password" name="senha" id="senha"><br><br>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" class="enviar">Enviar</button>
             <?php
             if (isset($_GET['erro'])) {
                 echo "<p class='aviso'>Usuário ou senha incorretos.</p>";
