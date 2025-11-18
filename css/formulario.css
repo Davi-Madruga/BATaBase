@@ -29,34 +29,45 @@ body{
   cursor: pointer;
 }
 
-.Formulario
-  {
-  width: 380px;
-  height: 220px;
-  padding: 25px 30px;
-  margin-top: 30px;
-  background-color: rgb(29, 29, 29);
-  border: 1px solid white;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(92, 92, 92, 0.6);
-  text-align: center;
+.BtoFechar:hover{
+    transition: 0.5s;
+    background-color: rgb(216, 0, 0);
+    color: white;
 }
 
-.enviar {
-  margin-top: 10px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 6px;
-  background-color: rgb(255, 255, 0);
-  cursor: pointer;
-  transition: 0.5s;
-  font-family: 'Orbitron', sans-serif; 
+.Formulario {
+    width: 380px;
+    height: 250px;
+    padding: 25px 30px;
+    margin-top: 30px;
+    background-color: rgb(29, 29, 29);
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(92, 92, 92, 0.6);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
 }
 
-.enviar:hover {
-  background-color: rgb(163, 163, 23);
-  color: white;
+
+.button{
+    cursor: pointer;
+    padding: 6px 14px;
+    font-family: 'Orbitron', sans-serif;
+    border: 1px solid #00baff;
+    background: #001c40;
+    color: #00eaff;
+    font-size: 14px;
+    transition: 0.3s;
 }
+
+.button:hover{
+    background: #003366;
+    box-shadow: 0 0 6px #00eaff;
+}
+
 
 input
 {

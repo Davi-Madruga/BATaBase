@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITENS</title>
-    <link rel="stylesheet" href="../../css/tela.css">
+    <link rel="stylesheet" href="../../css/tabelas.css">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<h1>ITENS | <a href="../tela.php"><button>Menu</button></a></h1> 
-<a href="cadastrar_item.php"><button>Criar</button></a>
+<h1 class="titulo">ITENS</h1> 
+<a href="../../index.php"><button class="BtoFechar">X</button></a>
+<a href="../tela.php" ><button class="btnesquerda button">MENU</button></a>
+<a href="cadastrar_item.php"><button class="btndireita button">CRIAR</button></a>
 <!--READ-->
 <?php
     include '../../infra/db.php';
     $select = "SELECT * FROM itens_tbl";
-
     $result = $conexao->query($select);
+    
     if($result->num_rows > 0){
-           echo "<table class='table' border='1'>
+           echo "<div class='table_container'><table>
                 <thead>
                     <tr>
                         <th>Nome</th>
@@ -31,15 +35,15 @@
                     echo "<td>".$linha['nome']."</td>";
                     echo "<td>".$linha['descricao']."</td>";
                     echo "<td>
-                    <a href='atualizar_item.php?id=".$linha['id']."'><button>Atualizar</button></a> |  
-                    <a href='deletar_item.php?id=".$linha['id']."' onclick=\"return confirm('Tem certeza que deseja deletar ".$linha['nome']."?');\"><button>Excluir</button></a>
+                    <a href='atualizar_item.php?id=".$linha['id']."'><button class='button'>Atualizar</button></a> |  
+                    <a href='deletar_item.php?id=".$linha['id']."' onclick=\"return confirm('Tem certeza que deseja deletar ".$linha['nome']."?');\"><button class='button'>Excluir</button></a>
                     </td>"; 
                     echo"</tr>";    
                 }
                 echo "</tbody>
-            </table>";
+            </table></div>";
     }else{
-        echo"Nenhum item cadastrado\n";
+        echo"<div class='table_container'><p>NENHUM ITEM CADASTRADO\n</p></div>";
     }
     $conexao->close();
 

@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADASTRAR ITEM</title>
-    <link rel="stylesheet" href="../../css/tela.css">
+    <link rel="stylesheet" href="../../css/formulario.css">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>CADASTRANDO...</h1>
+<h1 class="titulo">CADASTRANDO...</h1>
+<a href="../../index.php"><button class="BtoFechar">X</button></a>
+<div class="Formulario">
 <form action="cadastrar_item.php" method="post">
     <label>Nome:</label><br>
-    <input type="text" name="item_name"><br>
+    <input type="text" name="item_name" required><br>
     <label>Descricao:</label><br>
-    <input type="text" name="item_descricao"><br><br>
-    <button type="submit">Salvar</button> | <a href="itens.php"><button type="button">Voltar</button></a><br><br>
+    <input type="text" name="item_descricao" required><br><br>
+    <button type="submit" class="button">Salvar</button> | <a href="itens.php"><button type="button" class="button">Voltar</button></a><br><br>
 </form>
+</div>
 <?php
     include '../../infra/db.php';
 
@@ -23,10 +27,6 @@
 
     $item_name = $_POST['item_name'];
     $item_descricao = $_POST['item_descricao'];
-
-    if($item_name == '' || $item_descricao == ''){
-        die('Erro: Preencha todos os campos');
-    };
 
     $create = "INSERT INTO itens_tbl(nome, descricao) VALUES('$item_name','$item_descricao')";
 

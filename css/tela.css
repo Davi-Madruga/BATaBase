@@ -26,7 +26,7 @@ body{
     height: 100px;
     border: 3px solid rgb(0, 0, 0);
     box-shadow: 0px 0px 15px 5px yellow;
-    background-color: blue;
+    background: #001c40;
     font-family: 'Orbitron', sans-serif;
     color: white;
 }
@@ -49,6 +49,12 @@ body{
     height: 35px;
     top: 2%;
     right: 1%;
+}
+
+.BtoFechar:hover{
+    transition: 0.5s;
+    background-color: rgb(216, 0, 0);
+    color: white;
 }
 
 .titulo{

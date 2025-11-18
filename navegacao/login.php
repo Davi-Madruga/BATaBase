@@ -18,7 +18,7 @@
             <label for="senha">Senha:</label><br>
             <input type="password" name="senha" id="senha"><br><br>
 
-            <button type="submit" class="enviar">Enviar</button>
+            <button type="submit" class="button">Enviar</button>
             <?php
             if (isset($_GET['erro'])) {
                 echo "<p class='aviso'>Usuário ou senha incorretos.</p>";

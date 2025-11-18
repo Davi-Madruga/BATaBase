@@ -1,0 +1,116 @@
+body{
+    background-image: url('../img/telapc.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    display: block;
+}
+
+.BtoFechar:hover{
+    transition: 0.5s;
+    background-color: rgb(216, 0, 0);
+    color: white;
+}
+
+.BtoFechar {
+    font-size: large;
+    position: absolute;
+    border: solid 3px black;
+    background-color: crimson;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    top: 2%;
+    right: 1%;
+    cursor: pointer;
+}
+
+
+.titulo{
+    position: absolute;
+    font-weight: bolder;
+    color: rgb(255, 255, 0);
+    text-shadow: 3px 3px 20px rgb(199, 199, 0);
+    font-size: 5em;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.button{
+    cursor: pointer;
+    padding: 6px 14px;
+    font-family: 'Orbitron', sans-serif;
+    border: 1px solid #00baff;
+    background: #001c40;
+    color: #00eaff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.button:hover{
+    background: #003366;
+    box-shadow: 0 0 6px #00eaff;
+}
+
+.btnesquerda{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+
+.btndireita{
+    position: absolute;
+    top: 15%;
+    right: 25%;
+}
+
+.table_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+table{
+    background: rgba(0, 0, 50, 0.4);
+    backdrop-filter: blur(3px);
+    border: 2px solid #00baff;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    min-width: 550px;
+}
+
+th {
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+    background: #001a33;
+    border: 1px solid #00baff;
+    color: #00eaff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+td {
+    padding: 8px 10px;
+    border: 1px solid #0077aa;
+    font-size: 14px;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background: rgba(0, 0, 70, 0.3);
+}
+

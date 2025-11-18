@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATUALIZAR VILÃO</title>
-    <link rel="stylesheet" href="../../css/tela.css">
+    <link rel="stylesheet" href="../../css/formulario.css">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>ATUALIZANDO...</h1>
+<a href="../../index.php"><button class="BtoFechar">X</button></a>
+<h1 class="titulo">ATUALIZANDO...</h1>
 <?php
     include '../../infra/db.php';
     $id = $_GET['id'] ?? null;
@@ -43,6 +45,7 @@
     }
     mysqli_close($conexao);
 ?>
+<div class="Formulario">
 <form method="post">
     <input type="hidden" name='id' value="<?php echo $vilao["id"]?>"><br>
     <label for="nome">Nome: </label><br>
@@ -57,8 +60,9 @@
 
     <option value="EXTREMO" <?php echo ($vilao["periculosidade"] == "EXTREMO") ? "selected" : ""; ?>>EXTREMO</option>
 </select>
-  
-    <button type="submit">Atualizar</button> | <a href="vilao.php"><button type="button">Voltar</button></a>
+  <br><br>
+    <button type="submit" class="button">Atualizar</button> | <a href="viloes.php"><button type="button" class="button">Voltar</button></a>
+</form>
 </form>
 </body>
 </html>
