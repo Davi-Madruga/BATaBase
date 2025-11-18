@@ -6,10 +6,11 @@
     <title>Login</title>
     <link rel="stylesheet" href="../css/formulario.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <a href="../index.php"><button class="BtoFechar">X</button></a>
-    <h1 class="titulo">Bem-Vindo Batman</h1>
+    <h1 class="titulo">BEM V INDO</h1>
     <div class="Formulario">
         <form action="validacao.php" method="post">
             <label for="login">Login:</label><br>

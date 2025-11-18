@@ -6,9 +6,9 @@
     <title>BATABASE</title>
     <link rel="stylesheet" href="../css/tela.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-
-    <body>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
     <a href="../index.php"><button class="BtoFechar">X</button></a>
     <h1 class="titulo">BATABASE</h1>
     <div class="menu">
