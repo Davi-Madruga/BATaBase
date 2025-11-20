@@ -6,7 +6,6 @@
     <title>VILÕES</title>
     <link rel="stylesheet" href="../../css/tabelas.css">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <h1 class="titulo">VILÕES</h1> 
