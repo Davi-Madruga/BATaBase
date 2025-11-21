@@ -10,7 +10,7 @@
 </head>
 <body>
     <a href="../index.php"><button class="BtoFechar">X</button></a>
-    <h1 class="titulo">BEM V INDO</h1>
+    <h1 class="titulo">BEM VINDO</h1>
     <div class="Formulario">
         <form action="validacao.php" method="post">
             <label for="login">Login:</label><br>

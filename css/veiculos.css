@@ -7,10 +7,8 @@ body{
     min-height: 100vh;
     margin: 0;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Orbitron', sans-serif;
+    display: block;
 }
 
 .menu {
@@ -18,17 +16,6 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-}
-
-.botoes{
-    font-size: 35px;
-    width: 250px;
-    height: 100px;
-    border: 3px solid rgb(0, 0, 0);
-    box-shadow: 0px 0px 15px 5px yellow;
-    background: #001c40;
-    font-family: 'Orbitron', sans-serif;
-    color: white;
 }
 
 .botoes:hover{
@@ -68,11 +55,45 @@ body{
     transform: translate(-50%, -50%);
 }
 
-a{
-    color: inherit;
-    text-decoration: inherit;
-}
-
 button{
     cursor: pointer;
+}
+
+.container {
+display: flex;
+gap: 20px; 
+}
+
+.card {
+    width: 600px;
+    height: 300px;
+    border: 5px solid rgb(255, 255, 172); 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 25px yellow;
+}
+
+.card img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; 
+}
+
+.Batc1
+{
+    position: absolute;
+    top: 40%;
+    left: 1%;
+}
+.Batc2
+{
+    position: absolute;
+    top: 40%;
+    left: 34%;
+}
+.Batc3
+{
+    position: absolute;
+    top: 40%;
+    left: 67%
 }

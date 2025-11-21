@@ -14,8 +14,8 @@
     <div class="menu">
         <a href="itens/itens.php"><button id="itens" class="botoes">ITENS</button></a>
         <a href="viloes/viloes.php"><button id="viloes" class="botoes">VILÕES</button></a>
-        <button id="veiculos" class="botoes">VEICULOS</button>
-        <button id="trajes" class="botoes">TRAJES</button>
+        <a href="veiculos.html"> <button id="veiculos" class="botoes">VEICULOS</button></a>
+        <a href="trajes.html"> <button id="trajes" class="botoes">TRAJES</button></a>
     </div>
 </body>
 </html>
